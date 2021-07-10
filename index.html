@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Master</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Login Form Start -->
+      <div class="container">
+        <form action="" class="loginForm">
+          <h2 class="loginForm__title">Login</h2>
+          <div class="loginForm__content">
+            <label class="loginForm__label" for="email">Email</label>
+            <input
+              class="loginForm__text-input"
+              type="text"
+              placeholder="mail@website.com"
+              id="email"
+            />
+          </div>
+          <div class="loginForm__content">
+            <label class="loginForm__label" for="password">Password</label>
+            <input
+              class="loginForm__text-input"
+              type="text"
+              placeholder="Min. 8 character"
+              id="password"
+            />
+          </div>
+
+          <div class="loginForm__support">
+            <div class="loginForm__checkbox-wrap">
+              <input
+                type="checkbox"
+                class="checkbox-input"
+                id="checkbox-input"
+              />
+              <label class="checkbox" for="checkbox-input">
+                <i class="fa fa-check"></i>
+              </label>
+
+              <label for="checkbox-input">Remember me</label>
+            </div>
+            <a href="">Forget password?</a>
+          </div>
+
+          <div class="loginForm__footer">
+            <input class="loginForm__button" type="button" value="Login" />
+          </div>
+        </form>
+      </div>
+      <!-- Login Form End -->
+
+      <!-- About You Form Start -->
+      <div class="container">
+        <form action="aboutForm">
+          <h2 class="aboutForm__title">Tell us about you like ?</h2>
+
+          <div class="aboutForm__checkbox-wrap">
+            <input
+              type="radio"
+              class="aboutForm__checkbox-input"
+              id="checkbox-input1"
+              name="aboutRadio"
+            />
+            <label class="checkbox" for="checkbox-input1">
+              <i class="fas fa-paint-roller checkbox-icon"></i>
+              <label for="checkbox-input1" class="checkbox-label"
+                >Designs</label
+              >
+            </label>
+
+            <input
+              type="radio"
+              class="aboutForm__checkbox-input"
+              id="checkbox-input2"
+              name="aboutRadio"
+            />
+            <label class="checkbox" for="checkbox-input2">
+              <i class="far fa-file-alt checkbox-icon"></i>
+              <label for="checkbox-input2" class="checkbox-label"
+                >Projects</label
+              >
+            </label>
+          </div>
+        </form>
+      </div>
+      <!-- About You Form End -->
+
+      <!-- Sign Up Form Start -->
+      <div class="container">
+        <form action="" class="signUpForm">
+          <h1 class="signUpForm__label">Sign Up</h1>
+          <div class="signUpForm__contents">
+            <label class="name-label" for="">Name</label>
+            <div class="name-input">
+              <input
+                class="name-input-text"
+                type="text"
+                placeholder="Your name"
+              />
+              <div class="name-check">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Sign Up Form End -->
+
+      <!-- Custom Form Start -->
+      <div class="container">
+        <form action="" class="customForm">
+          <h1 class="customForm__title">Custom Form</h1>
+
+          <div class="radio-box1">
+            <input type="radio" id="radio-checkbox" />
+            <label class="radio-checkbox-label" for="radio-checkbox">
+              <div class="circle"></div>
+            </label>
+          </div>
+
+          <div class="toggle-box">
+            <input type="checkbox" id="toggle-checkbox-input" />
+            <label class="toggle-checkbox" for="toggle-checkbox-input">
+              <div class="circle"></div>
+            </label>
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown__select">
+              <span class="dropdown__text">Select an option</span>
+              <i class="fa fa-angle-down dropdown__caret"></i>
+            </div>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <span class="dropdown__text">Option 1</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__text">Option 2</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__text">Option 3</span>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <!-- Custom Form End -->
+    </div>
+  </body>
+</html>
