@@ -1,1 +1,1 @@
-ビュー : https://mtp0881.github.io/practiveForm1/
+ビュー : https://mtp0881.github.io/practiveForm/
