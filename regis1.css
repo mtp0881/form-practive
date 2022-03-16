@@ -1,0 +1,157 @@
+input {
+  outline: none;
+}
+
+.wrapper2 {
+  max-width: 1040px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 80px;
+  display: flex;
+  gap: 0 70px;
+  box-shadow: rgba(215, 215, 215, 0.5) 0px 4px 16px;
+}
+.registration-form1 {
+  min-width: 340px;
+}
+
+.registration-title1 {
+  color: #375a64;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  color: #77888d;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.registration-form1 input {
+  width: 100%;
+  background-color: #f7f8f9;
+  border: 1px solid #edeff1;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+::placeholder {
+  color: #d8dcdd;
+}
+
+.form-button {
+  margin: 20px 0 40px 0;
+}
+
+.form-button > button {
+  width: 70%;
+  background: linear-gradient(#ff8087, #f84f5b);
+  border: 1px solid #ffb6bb;
+  padding: 18px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button > a {
+  display: inline-block;
+  width: 28%;
+  text-align: center;
+  text-decoration: none;
+  color: #ff5b68;
+  font-size: 17px;
+}
+
+.privacy-check {
+  display: flex;
+  align-items: flex-start;
+}
+
+.privacy-check > input {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+.privacy-check > label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.4;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.privacy-check > label > a {
+  color: #ff5b68;
+}
+
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container2 input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container2 input:checked ~ .checkmark {
+  background-color: #ff5b68;
+  transition: background 0.4s ease;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.image-right1 {
+  width: calc(100% - 340px);
+}
+
+.image-right1 img {
+  width: 100%;
+}
